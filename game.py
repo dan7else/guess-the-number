@@ -9,8 +9,8 @@ while True:
     try:
         guess = int(input("Enter a number from 0 to 100: "))
         
-        if guess > 100:
-            print("That's more than 100! Try again.")
+        if guess > 100 or guess > 0:
+            print("Please enter a number between 1 and 100!")
             continue         
 
         attempts += 1       
